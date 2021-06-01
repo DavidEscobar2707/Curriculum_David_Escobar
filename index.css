@@ -47,7 +47,15 @@ header{
     padding:  1.5rem ;
     font-size: 0.9rem;
 }
-
+.habilidades{
+    padding: 2rem;
+}
+    .habilidades .progress-bar{
+        padding: 2rem 0;
+    }
+.certificados{
+    padding-top: 1rem ;
+}
 
 
 footer{

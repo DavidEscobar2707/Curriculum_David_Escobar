@@ -66,14 +66,16 @@ fetch(URLPOST,peticionPOST)
             tarjeta.classList.add("card-img-top");
             foto.src=pista.imagen;
             //pintar un audio
-            
+            let audio=document.createElement("audio")
+            tarjeta.classList.add("controls") 
+            audio.src=pista.preview_url
             //-------------------------------------//
             //INDICAR QUE LA FOTO VA DENTRO DE LA TARJETA
             tarjeta.appendChild(foto);
-            
+            tarjeta.appendChild(audio)
             //INDICAR QUE LA TARJETA VA DENTRO DEL CONTENEDOR COLUMNA
             contenedorColumna.appendChild(tarjeta);
-
+            
             //INDICAR QUE EL CONTENEDOR COLUMNA VA DENTRO DEL CONTENEDOR PADRE
             contenedorPadre.appendChild(contenedorColumna);
         })
