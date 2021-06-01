@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family:'Roboto', sans-serif;
+}
+
+
+
+.contenedorPrincipal{
+    
+
+}
+
+header{
+    background-image:url(https://wallpaperaccess.com/full/1947484.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    height: 100%;
+}
+    
+    .header .navbar{
+        background-color: transparent !important;
+        font-family: 'Open Sans', sans-serif
+    }
+.cabecera{
+    padding: 2rem 0;
+}
+.card {
+    padding: 3rem 3rem;
+    border-radius: 0 ;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+.tarjeta1 {
+    padding: 1rem 0;
+    font-size: 1.7em;
+    
+}
+    .tarjeta1 span{
+        font-weight: bold;
+        color: black;
+    }
+.tarjeta2 {
+    background-color: #B0B7BC;
+    color: black;
+    font-weight: bold;
+    padding:  1.5rem ;
+    font-size: 0.9rem;
+}
+
+
+
+footer{
+    background: linear-gradient(90deg, #1c3643, #273b47 25%, #1e5472)
+}
