@@ -43,7 +43,7 @@ fetch(URLPOST,peticionPOST)
             return{
                 nombre:pista.name,
                 audio: pista.preview_url,
-                imagen:pista.album.images[0].url,
+                imagen :pista.album.images[0].url,
                 popularidad: pista.popularity
             }
         })
@@ -51,28 +51,34 @@ fetch(URLPOST,peticionPOST)
         
     }
     function pintarDatos(datosFiltrados){
+        datosFiltrados=datosFiltrados.splice(0,2)
         let contenedorPadre=document.getElementById("contenedorPadre");
         
         datosFiltrados.map(function(pista){
             //pintar un div con la clase col
             let contenedorColumna=document.createElement("div");
-            contenedorColumna.classList.add("col")
+            contenedorColumna.classList.add("col");
             //pintar un div con la clase card
             let tarjeta=document.createElement("div");
             tarjeta.classList.add("card");
             tarjeta.classList.add("h-100");
             //pintar una img con clase card-img-top
-            let foto=document.createElement("img")
+            let foto=document.createElement("img");
             tarjeta.classList.add("card-img-top");
             foto.src=pista.imagen;
             //pintar un audio
-            let audio=document.createElement("audio")
-            tarjeta.classList.add("controls") 
-            audio.src=pista.preview_url
+            let audio=document.createElement("audio");
+            tarjeta.setAttribute("controls",""); 
+            audio.src=pista.audio;
+
+            let nombre=document.createElement("h4");
+            tarjeta.classList.add("tituloCancion")
+            nombre.src=pista.nombre;
             //-------------------------------------//
             //INDICAR QUE LA FOTO VA DENTRO DE LA TARJETA
             tarjeta.appendChild(foto);
-            tarjeta.appendChild(audio)
+            tarjeta.appendChild(audio);
+            tarjeta.appendChild(nombre)
             //INDICAR QUE LA TARJETA VA DENTRO DEL CONTENEDOR COLUMNA
             contenedorColumna.appendChild(tarjeta);
             

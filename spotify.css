@@ -1,0 +1,12 @@
+body {
+    padding: 0;
+}
+.navbar{
+    background-color: black;
+}
+.navbar-brand{
+    width: 8rem;
+}
+.piePagina{
+    background-color: black;
+}
